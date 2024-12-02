@@ -1,5 +1,4 @@
 
-
 import re
 import numpy as np
 import nltk
@@ -56,8 +55,6 @@ def build_freqs(tweets, ys):
 import pandas as pd
 from nltk.corpus import twitter_samples
 
-
-
 all_positive_tweets = twitter_samples.strings('positive_tweets.json')
 all_negative_tweets = twitter_samples.strings('negative_tweets.json')
 
@@ -84,7 +81,6 @@ def sigmoid(z):
 
 
 def gradientDescent(x, y, theta, alpha, num_iters):
-
 
     m = x.shape[0]
 
